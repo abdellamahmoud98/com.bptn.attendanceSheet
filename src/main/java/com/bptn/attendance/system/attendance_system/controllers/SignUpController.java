@@ -32,9 +32,17 @@ public class SignUpController {
            String userName = userNameNew.getText().trim();
 
            if (!password.equals(confirmPass)) {
-               // send error message to user
+               confirmNewPassword.setStyle("-fx-text-fill: red;");
                return;
            }
+
+           if (password.length() < 6) {
+               confirmNewPassword.setStyle("-fx-text-fill: red;");
+               return;
+           }
+
+
+
            SignUp signupUser = new SignUp(password,userName);
            signupUser.signUpUser();
            displayLoginScreen(signupButton,"/com/bptn/attendance/system/attendance_system/login.fxml","Login");

@@ -10,6 +10,7 @@ module com.bptn.attendance.system.attendance_system {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.bptn.attendance.system.attendance_system to javafx.fxml;
     exports com.bptn.attendance.system.attendance_system;

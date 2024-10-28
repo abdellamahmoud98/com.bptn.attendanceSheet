@@ -35,17 +35,18 @@ public class LoginController {
 
            boolean isUserValid = userLogin.validateLogin(name,password);
 
-           System.out.println(isUserValid);
-               // invalid user
-              if (!isUserValid) {
-                  // display an error message for the user
-                  return;
-              }
+
+
+           if (!isUserValid) {
+               userName.setStyle("-fx-text-fill: red;");
+               userPassword.setStyle("-fx-text-fill: red;");
+               return;
+           }
 
 
               // Save user information
               userLogin.saveLoginInfo(password,name);
-              displayAttendanceScreen(loginButton,"/com/bptn/attendance/system/attendance_system/attendance-sheet.fxml","Attendance Sheet");
+              displayAttendanceScreen(loginButton, "/com/bptn/attendance/system/attendance_system/attendance.fxml","Attendance Sheet");
 
        });
 
