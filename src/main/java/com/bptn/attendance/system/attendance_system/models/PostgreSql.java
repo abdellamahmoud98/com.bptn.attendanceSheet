@@ -9,9 +9,9 @@ public class PostgreSql {
 
 
 
-    private static final String URL = "jdbc:postgresql://localhost:5050/attendance_sheet";
-    private static final String USER = "";
-    private static final String PASSWORD = "";
+    private static final String URL = "jdbc:postgresql://localhost:5432/attendance_sheet";
+    private static final String USER = "postgres";
+    private static final String PASSWORD = "pg123";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

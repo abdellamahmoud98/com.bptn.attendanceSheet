@@ -33,6 +33,8 @@ public class AttendanceSheet implements Attendance{
 
         String r = String.format("Today we have %d students present and %d number of students absent ", numberOfStudentsPresent,numberOfStudentsAbsent);
         FileHandler.saveReportToFile(r);
+
+
 //        FileHandler.saveReportToFile("AttendanceSheet{" +
 //                "students=" + studentsPresent +
 //                '}');

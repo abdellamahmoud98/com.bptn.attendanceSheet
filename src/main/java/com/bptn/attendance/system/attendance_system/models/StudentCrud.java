@@ -1,5 +1,4 @@
 package com.bptn.attendance.system.attendance_system.models;
-
 import com.bptn.attendance.system.attendance_system.models.Student;
 
 import java.sql.Connection;
