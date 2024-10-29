@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 class FileHandler {
-    // Save attendance report to a file
+
     public static void saveReportToFile(String report) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("attendance_report_" + LocalDate.now() + ".txt"))) {
             writer.write(report);

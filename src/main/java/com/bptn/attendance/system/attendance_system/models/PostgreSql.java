@@ -7,8 +7,6 @@ import java.sql.SQLException;
 public class PostgreSql {
 
 
-
-
     private static final String URL = "jdbc:postgresql://localhost:5432/attendance_sheet";
     private static final String USER = "postgres";
     private static final String PASSWORD = "pg123";
